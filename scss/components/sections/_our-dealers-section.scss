@@ -36,3 +36,70 @@
 		}
 	}
 }
+і
+.dealer-card {
+	border: 1px solid #e9e9e9;
+	padding: 30px 25px 25px;
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+
+	.card-header {
+		display: flex;
+		align-items: center;
+		margin-bottom: 20px;
+		flex: auto;
+
+		.card-logo{
+			flex: none;
+			margin-right: 25px;
+
+			img{
+				display: block;
+				max-width: 100%;
+			}
+		}
+
+		.card-caption{
+			font-size: 20px;
+			line-height: 1.3;
+			font-weight: 400;
+			color: $text-dark;
+		}
+	}
+
+	.card-content{
+		flex: none;
+		display: flex;
+		align-items: flex-end;
+		justify-content: space-between;
+
+		.card-info{
+			list-style: none;
+
+			a{
+				text-decoration: none;
+				font-family: $second-font;
+				color: $text-color;
+				user-select: none;
+
+				&:hover{
+					color: $primary;
+				}
+			}
+		}
+
+		.card-link{
+			padding-left: 30px;
+
+			a{
+				color: $primary;
+				text-decoration: none;
+
+				&:hover{
+					text-decoration: underline;
+				}
+			}
+		}
+	}
+}

@@ -32,8 +32,156 @@
 						<li data-tab="#regions">Регионы</li>
 					</ul>
 					<div class="tabs-container">
-						<div class="tab" id="moscow">moscow</div>
-						<div class="tab" id="regions">regions</div>
+						<div class="tab" id="moscow">
+							<div class="cards-list columns-3">
+								<div class="item">
+									<div class="dealer-card">
+										<div class="card-header">
+											<div class="card-logo">
+												<img src="img/logos/dealer-1.png" alt="">
+											</div>
+											<div class="card-caption">Global Distribution
+												<br>Center</div>
+										</div>
+										<div class="card-content">
+											<ul class="card-info">
+												<li>
+													<a href="tel:+74957738718">+7 (495) 773-87-18</a>
+												</li>
+												<li>
+													<a href="mailto:clients@gdcentre.ru">clients@gdcentre.ru</a>
+												</li>
+											</ul>
+											<div class="card-link">
+												<a href="#" target="_blank">gdcentre.ru</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="item">
+									<div class="dealer-card">
+										<div class="card-header">
+											<div class="card-logo">
+												<img src="img/logos/dealer-2.png" alt="">
+											</div>
+											<div class="card-caption">Супермаркет
+												<br>для кондитера</div>
+										</div>
+										<div class="card-content">
+											<ul class="card-info">
+												<li>
+													<a href="tel:+74957410030">+7 (495) 741-00-30</a>
+												</li>
+												<li>
+													<a href="mailto:6199415@mail.ru">6199415@mail.ru</a>
+												</li>
+											</ul>
+											<div class="card-link">
+												<a href="#" target="_blank">vtk-moscow.ru</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="item">
+									<div class="dealer-card">
+										<div class="card-header">
+											<div class="card-logo">
+												<img src="img/logos/dealer-3.png" alt="">
+											</div>
+											<div class="card-caption">Компания <br>Пакград</div>
+										</div>
+										<div class="card-content">
+											<ul class="card-info">
+												<li>
+													<a href="tel:8212291370">(8212) 29-13-70</a>
+												</li>
+												<li>
+													<a href="mailto:clients@gdcentre.ru">clients@gdcentre.ru</a>
+												</li>
+											</ul>
+											<div class="card-link">
+												<a href="#" target="_blank">pakgrad.ru</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="tab" id="regions">
+							<div class="cards-list columns-3">
+								<div class="item">
+									<div class="dealer-card">
+										<div class="card-header">
+											<div class="card-logo">
+												<img src="img/logos/dealer-1.png" alt="">
+											</div>
+											<div class="card-caption">Global Distribution
+												<br>Center</div>
+										</div>
+										<div class="card-content">
+											<ul class="card-info">
+												<li>
+													<a href="tel:+74957738718">+7 (495) 773-87-18</a>
+												</li>
+												<li>
+													<a href="mailto:clients@gdcentre.ru">clients@gdcentre.ru</a>
+												</li>
+											</ul>
+											<div class="card-link">
+												<a href="#" target="_blank">gdcentre.ru</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="item">
+									<div class="dealer-card">
+										<div class="card-header">
+											<div class="card-logo">
+												<img src="img/logos/dealer-2.png" alt="">
+											</div>
+											<div class="card-caption">Супермаркет
+												<br>для кондитера</div>
+										</div>
+										<div class="card-content">
+											<ul class="card-info">
+												<li>
+													<a href="tel:+74957410030">+7 (495) 741-00-30</a>
+												</li>
+												<li>
+													<a href="mailto:6199415@mail.ru">6199415@mail.ru</a>
+												</li>
+											</ul>
+											<div class="card-link">
+												<a href="#" target="_blank">vtk-moscow.ru</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="item">
+									<div class="dealer-card">
+										<div class="card-header">
+											<div class="card-logo">
+												<img src="img/logos/dealer-3.png" alt="">
+											</div>
+											<div class="card-caption">Компания <br>Пакград</div>
+										</div>
+										<div class="card-content">
+											<ul class="card-info">
+												<li>
+													<a href="tel:8212291370">(8212) 29-13-70</a>
+												</li>
+												<li>
+													<a href="mailto:clients@gdcentre.ru">clients@gdcentre.ru</a>
+												</li>
+											</ul>
+											<div class="card-link">
+												<a href="#" target="_blank">pakgrad.ru</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>

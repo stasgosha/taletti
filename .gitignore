@@ -2,3 +2,5 @@
 *.css.map
 bootstrap-4-dev/*
 data/*
+
+prepros-6.config
