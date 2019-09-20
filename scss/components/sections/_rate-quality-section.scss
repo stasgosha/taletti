@@ -1,0 +1,18 @@
+.rate-quality-section{
+	padding: 45px 0 90px;
+
+	.section-image{
+		position: relative;
+
+		img{
+			display: block;
+			max-width: 100%;
+			height: auto;
+		}
+
+		p{
+			max-width: 55%;
+			margin-top: -20px;
+		}
+	}
+}

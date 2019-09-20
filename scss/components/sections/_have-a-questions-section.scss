@@ -1,0 +1,58 @@
+.have-a-questions-section{
+	padding: 50px 0;
+
+	&:last-child{
+		padding-bottom: 95px;
+	}
+}
+
+.have-a-questions-block{
+	display: flex;
+	width: 100%;
+	align-items: center;
+	max-width: 770px;
+	margin: 0 auto;
+	color: $text-dark;
+	justify-content: space-between;
+
+	p{
+		font-size: 20px;
+		line-height: 1.3;
+	}
+
+	.block-text{
+		.block-caption{
+			font-size: 36px;
+			line-height: 1.1;
+			font-weight: 400;
+			margin-bottom: 5px;
+		}
+	}
+
+	.block-image{
+		margin: 0 15px;
+		flex: none;
+
+		img{
+			margin-top: -33px;
+			display: block;
+		}
+	}
+
+	.block-info{
+		text-align: right;
+
+		.block-phone{
+			font-size: 24px;
+			line-height: 40px;
+			font-weight: 300;
+			color: $text-dark;
+			letter-spacing: 0.025em;
+			margin-bottom: 5px;
+
+			&:hover{
+				color: $primary;
+			}
+		}
+	}
+}

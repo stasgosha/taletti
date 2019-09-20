@@ -1,0 +1,81 @@
+.big-slider-section{
+	position: relative;
+
+	.container{
+		position: relative;
+	}
+
+	.slider-pagination{
+		position: absolute;
+		right: 15px;
+		top: 200px;
+		z-index: 10;
+	}
+}
+
+.big-slider{
+	.slide{
+		position: relative;
+		padding-top: 200px;
+		padding-bottom: 90px;
+		height: 100vh;
+		min-height: 600px;
+		max-height: 900px;
+
+		.slide-bg{
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			background: #000;
+			left: 0;
+			top: 0;
+
+			img{
+				width: 100%;
+				height: 100%;
+				display: block;
+				object-fit: cover;
+				opacity: .37;
+			}
+		}
+
+		.container{
+			height: 100%;
+		}
+
+		.slide-body{
+			position: relative;
+			z-index: 2;
+			height: 100%;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			align-items: flex-start;
+
+			.slide-caption{
+				color: #fff;
+				padding-top: 70px;
+				max-width: 680px;
+			}
+		}
+	}
+
+	.slick-arrow{
+		bottom: 90px;
+		top: auto;
+		transform: none;
+		right: 0;
+		left: auto;
+		z-index: 10;
+
+		&.slick-prev{
+			// 50% + половина контейнера - смещение - ширина конпки
+			left: calc(50% + 600px - 74px - 60px);
+		}
+
+		&.slick-next{
+			right: auto;
+			left: calc(50% + 600px - 15px - 60px);
+		}
+	}
+}

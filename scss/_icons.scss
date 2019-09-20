@@ -1,0 +1,105 @@
+[class^="icon-"], [class*=" icon-"]{
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.icon-world{
+	width: 16px;
+	height: 16px;
+	background: url(../img/icons/world.png) no-repeat center center;
+
+	.sticky &,
+	.white &{
+		background: url(../img/icons/world-dark.png) no-repeat center center;
+	}
+}
+
+.icon-instagram{
+	width: 14px;
+	height: 14px;
+	background: url(../img/icons/instagram.png) no-repeat center center;
+
+	.sticky &,
+	.white &{
+		background: url(../img/icons/instagram-dark.png) no-repeat center center;
+	}
+}
+
+.icon-search{
+	width: 15px;
+	height: 15px;
+	background: url(../img/icons/search.png) no-repeat center center;
+
+	.sticky &,
+	.white &{
+		background: url(../img/icons/search-dark.png) no-repeat center center;
+	}
+}
+
+.icon-phone{
+	width: 16px;
+	height: 16px;
+	background: url(../img/icons/phone.png) no-repeat center center;
+	background-size: contain;
+
+	.sticky &,
+	.white &,
+	.phone-link.dark &{
+		background: url(../img/icons/phone-dark.png) no-repeat center center;
+		background-size: contain;
+	}
+
+	&.big{
+		width: 25px;
+		height: 25px;
+	}
+}
+
+.icon-arrow-right{
+	width: 10px;
+	height: 16px;
+	background: url(../img/icons/arrow-right.png) no-repeat center center;
+}
+
+.icon-instagram-orange{
+	width: 14px;
+	height: 14px;
+	background: url(../img/icons/instagram-orange.png) no-repeat center center;
+}
+
+.icon-clock{
+	width: 16px;
+	height: 16px;
+	background: url(../img/icons/clock.png) no-repeat center center;
+}
+
+.icon-email{
+	width: 13px;
+	height: 12px;
+	background: url(../img/icons/email.png) no-repeat center center;
+}
+
+.icon-location{
+	width: 12px;
+	height: 16px;
+	background: url(../img/icons/location.png) no-repeat center center;
+}
+
+.icon-chevron-left{
+	width: 15px;
+	height: 24px;
+	background: url(../img/icons/slider-arrows.png) no-repeat left center;
+}
+
+.icon-chevron-right{
+	width: 15px;
+	height: 24px;
+	background: url(../img/icons/slider-arrows.png) no-repeat right center;
+}
+
+.icon-download{
+	width: 12px;
+	height: 11px;
+	background: url(../img/icons/download.png) no-repeat right center;
+}

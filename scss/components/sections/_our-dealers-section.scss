@@ -1,0 +1,38 @@
+.our-dealers-section{
+	padding: 85px 0;
+
+	.section-caption{
+		margin-bottom: 15px;
+	}
+}
+
+.tabs-nav{
+	margin-bottom: 20px;
+	display: flex;
+	list-style: none;
+	font-weight: 400;
+
+	li{
+		margin-right: 5px;
+		font-size: 14px;
+		line-height: 24px;
+		border-radius: 12px;
+		color: $text-dark;
+		transition: all $t;
+		cursor: pointer;
+		padding: 0 22px;
+
+		&:hover{
+			color: $primary;
+		}
+
+		&.current{
+			color: #fff;
+			background: linear-gradient(to bottom, #f99048, #ee7624);
+		}
+
+		&:last-child{
+			margin-right: 0;
+		}
+	}
+}

@@ -1,0 +1,61 @@
+.catalog-section{
+	padding: 70px 0 45px;
+}
+
+.catalog-cards{
+	display: flex;
+	width: calc(100% + 30px);
+	margin-left: -15px;
+	margin-right: -15px;
+	margin-bottom: -30px;
+	flex-wrap: wrap;
+
+	.item{
+		padding: 0 15px;
+		margin-bottom: 30px;
+		width: 25%;
+
+		&.wide{
+			width: 50%;
+		}
+	}
+}
+
+.catalog-card{
+	position: relative;
+	border-radius: $r;
+	transition: all $t;
+	width: 100%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	display: block;
+
+	&:before{
+		content: '';
+		display: block;
+		padding-top: 100%;
+	}
+
+	.card-caption{
+		font-size: 20px;
+		line-height: 1.5;
+		letter-spacing: -0.015em;
+		position: absolute;
+		bottom: 50px;
+		left: 40px;
+		text-transform: uppercase;
+		color: #fff;
+	}
+
+	&:hover{
+		box-shadow: 0 24px 59px rgba(#653413, .36);
+		transform: scale(1.03) rotate(-0.5deg);
+	}
+
+	.wide &{
+		&:before{
+			padding-top: 47.3684%;
+		}
+	}
+}

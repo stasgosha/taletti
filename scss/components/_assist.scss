@@ -1,0 +1,16 @@
+.push{
+	position: relative;
+}
+
+.flex-center{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.flex-right,
+.flex-end{
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+}

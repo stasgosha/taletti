@@ -1,0 +1,21 @@
+// Fonts
+$main-font: 'Montserrat', Arial, sans-serif;
+$second-font: 'Noto Sans', Arial, sans-serif;
+
+// Colors
+$orange: #ee7624;
+
+$gray: #4a4a4a;
+$dark: #191919;
+
+$text-color: $gray;
+$text-dark: $dark;
+
+$primary: $orange;
+$accent: $orange;
+
+// Params
+$body-bg: #fff; // site background
+$t: .3s; // animation duration
+$r: 20px; // default border radius
+$shadow: 0 5px 25px rgba(#000, .1); // default card shadow

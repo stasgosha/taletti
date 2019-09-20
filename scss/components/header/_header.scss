@@ -1,0 +1,182 @@
+.header{
+	position: fixed;
+	width: 100%;
+	top: 0;
+	z-index: 100;
+	transition: all $t;
+	padding-bottom: 24px;
+
+	.header-row{
+		display: flex;
+		width: calc(100% + 30px);
+		margin-left: -15px;
+		margin-right: -15px;
+		align-items: center;
+		justify-content: space-between;
+		transition: all $t;
+
+		&.first{
+			padding: 24px 0;
+		}
+
+		.header-block{
+			padding: 0 15px;
+		}
+	}
+
+	.on-sticky{
+		display: none;
+	}
+
+	&.sticky{
+		padding-bottom: 12px;
+		background: #fff;
+		box-shadow: $shadow;
+
+		.header-row{
+			&.first{
+				padding: 12px 0;
+			}
+		}
+
+		.on-sticky{
+			display: block;
+		}
+
+		.hide-on-sticky{
+			display: none;
+		}
+	}
+
+	&.white{
+		background: #fff;
+		box-shadow: $shadow;
+
+		.on-sticky{
+			display: block;
+		}
+
+		.hide-on-sticky{
+			display: none;
+		}
+	}
+}
+
+.phone-link{
+	font-size: 17px;
+	line-height: 18px;
+	color: #fff;
+	display: flex;
+	align-items: center;
+	transition: all $t;
+	letter-spacing: 0.025em;
+
+	&:hover{
+		color: $primary;
+	}
+
+	i{
+		margin-right: 7px;
+		display: block;
+	}
+
+	&.big{
+		font-size: 30px;
+		line-height: 1;
+
+		i{
+			margin-right: 15px;
+		}
+	}
+
+	.sticky &,
+	.white &,
+	&.dark{
+		color: #262626;
+
+		&:hover{
+			color: $primary;
+		}
+	}
+}
+
+.header-actions-list{
+	display: flex;
+	align-items: center;
+
+	.item{
+		padding-right: 15px;
+		margin-right: 15px;
+		position: relative;
+
+		&:after{
+			content: '';
+			display: block;
+			width: 1px;
+			height: 20px;
+			position: absolute;
+			top: 50%;
+			right: 0;
+			transform: translateY(-50%);
+			background: rgba(#fff, .21);
+		}
+
+		&:last-child{
+			margin-top: 0;
+			padding-right: 0;
+
+			&:after{
+				display: none;
+			}
+		}
+	}
+}
+
+.top-nav{
+	display: flex;
+	list-style: none;
+
+	li{
+		margin-right: 40px;
+
+		&:last-child{
+			margin-right: 0;
+		}
+
+		a{
+			color: #fff;
+			text-transform: uppercase;
+			font-size: 14px;
+			line-height: 1.5;
+			letter-spacing: -0.025em;
+			transition: all $t;
+			display: block;
+
+			&:hover{
+				color: $primary;
+			}
+
+			.sticky &,
+			.white &{
+				color: #262626;
+
+				&:hover{
+					color: $primary;
+				}
+			}
+		}
+
+		&.current-menu-item,
+		&.current-menu-parent{
+			a{
+				color: $primary;
+			}
+		}
+		
+		&.current-menu-item{
+			a{
+				cursor: default;
+			}
+		}
+	}
+}

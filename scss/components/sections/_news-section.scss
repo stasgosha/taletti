@@ -1,0 +1,28 @@
+.news-section{
+	padding: 80px 0 90px;
+
+	.section-caption{
+		margin-bottom: 20px;
+	}
+
+	.section-inner{
+		display: flex;
+		margin-bottom: 30px;
+	}
+
+	.section-news-wrapper{
+		width: 66.6667%;
+
+		.cards-list{
+			.item{
+				border-right: 1px solid #ececec;
+			}
+		}
+	}
+
+	.section-subscribe{
+		width: 33.3333%;
+		padding-left: 40px;
+		// align-self: flex-end;
+	}
+}

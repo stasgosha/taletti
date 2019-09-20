@@ -1,0 +1,78 @@
+.manufacture-section{
+	padding: 40px 0 85px;
+
+	&.big-paddings{
+		padding: 85px 0;
+	}
+
+	.section-caption{
+		margin-bottom: 60px;
+	}
+
+	.section-inner{
+		display: flex;
+		align-items: flex-end;
+
+		.section-text-slider{
+			width: 50%;
+			padding-right: 50px;
+		}
+
+		.section-images-slider{
+			width: 50%;
+			position: relative;
+
+			.slider-pagination{
+				position: absolute;
+				left: 308px;
+				bottom: 0;
+			}
+		}
+	}
+}
+
+.manufacture-images-slider{
+	width: calc(100% + 30px);
+	margin: -100px -15px;
+
+	.slide{
+		position: relative;
+		transition: all $t;
+		padding: 100px 15px;
+
+		&.slide-2,
+		&.slide-3{
+			transform: translateY(-80px);
+		}
+
+		img{
+			width: 100%;
+			height: 380px;
+			display: block;
+			object-fit: cover;
+			flex: none;
+		}
+	}
+
+	.slick-arrow{
+		z-index: 50;
+
+		&.slick-prev{
+			position: absolute;
+			right: 74px;
+			left: auto;
+			top: auto;
+			bottom: 100px;
+			transform: translateY(0);
+		}
+
+		&.slick-next{
+			position: absolute;
+			right: 15px;
+			left: auto;
+			top: auto;
+			bottom: 100px;
+			transform: translateY(0);
+		}
+	}
+}

@@ -1,0 +1,45 @@
+@import "components/fonts";
+@import "components/vars";
+@import "components/layout";
+@import "components/typography";
+@import "components/assist";
+@import "icons";
+
+// Header
+@import "components/header/header";
+
+// Sections
+@import "components/sections/big-slider-section";
+@import "components/sections/catalog-section";
+@import "components/sections/about-section";
+@import "components/sections/why-we-section";
+@import "components/sections/news-section";
+@import "components/sections/manufacture-section";
+@import "components/sections/how-we-work-section";
+@import "components/sections/certs-section";
+@import "components/sections/articles-section";
+@import "components/sections/order-section";
+@import "components/sections/news-list-section";
+@import "components/sections/breadcrumbs-section";
+@import "components/sections/faq-section";
+@import "components/sections/have-a-questions-section";
+@import "components/sections/about-pack-section";
+@import "components/sections/paper-catalogs-section";
+@import "components/sections/rate-quality-section";
+@import "components/sections/our-dealers-section";
+@import "components/sections/materials-section";
+@import "components/sections/want-to-be-a-dealer-section";
+
+// Footer
+@import "components/footer/footer";
+
+// Common
+@import "components/common/buttons";
+@import "components/common/forms";
+@import "components/common/panel";
+@import "components/common/news-card";
+@import "components/common/advantages-list";
+@import "components/common/subscribe-block";
+@import "components/common/pagination";
+@import "components/common/add-request-block";
+@import "components/common/material-card";
