@@ -67,7 +67,8 @@
 				</div>
 				<div class="section-inner">
 					<div class="section-image">
-						<img src="img/tmp/about-image.png" alt="">
+						<img src="img/section-images/about-image.png" alt="">
+						<p class="tpg-body-1">Используем бумагу и картон от мировых лидеров отрасли</p>
 					</div>
 					<div class="section-content tpg">
 						<p>Наша компания является частью торгово-производственного альянса на территории России, в который входят компании TALETTI , BENDERSITALIA SRL , BENDERS RUSSIA , объединяющего поставки сырья из жиростойких материалов на основе бумаги и картона от мировых лидеров отрасли: NORDIC PAPER и METSA TISSUE. </p>

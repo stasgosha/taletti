@@ -53,7 +53,7 @@ ul, ol{
 
 	.page-content{
 		&.inner-page{
-			padding-top: 167px;
+			padding-top: 174px;
 		}
 	}
 }
@@ -238,6 +238,54 @@ ul, ol{
 	.slide{
 		outline: none !important;
 	}
+
+	&.slider-default-paddings{
+		width: calc(100% + 30px);
+		margin-left: -15px;
+		margin-right: -15px;
+		
+		.slide{
+			padding: 0 15px;
+		}
+	}
+
+	&.slick-dotted{
+		margin-bottom: 40px !important;
+	}
+
+	.slick-dots{
+		bottom: -40px;
+
+		li{
+			margin: 0 3px;
+			width: 6px;
+			height: 6px;
+
+			button{
+				width: 6px;
+				height: 6px;
+				border-radius: 50%;
+				background: #cecece;
+				transition: all $t;
+				box-sizing: border-box;
+				padding: 0;
+
+				&:hover{
+					background: $primary;
+				}
+
+				&:before{
+					display: none;
+				}
+			}
+
+			&.slick-active{
+				button{
+					background: $primary;
+				}
+			}
+		}
+	}
 }
 
 .slick-arrow{
@@ -302,4 +350,28 @@ ul, ol{
 	.divider{
 		margin-right: 0.3em;
 	}
+}
+
+.section-default-paddings{
+	padding: 85px 0;
+}
+
+.section-small-paddings{
+	padding: 40px 0;
+}
+
+.section-default-padding-top{
+	padding-top: 85px;
+}
+
+.section-small-padding-top{
+	padding-top: 40px;
+}
+
+.section-default-padding-bottom{
+	padding-bottom: 85px;
+}
+
+.section-small-padding-bottom{
+	padding-bottom: 40px;
 }

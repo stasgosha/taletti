@@ -1,0 +1,61 @@
+.factory-features-info-section{
+	padding: 85px 0;
+
+	.section-inner{
+		.section-row{
+			margin-bottom: 85px;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+
+			&.reverse{
+				flex-direction: row-reverse;
+			}
+
+			.section-image,
+			.section-content{
+				width: calc(50% - 15px);
+			}
+
+			&:last-child{
+				margin-bottom: 0;
+			}
+		}
+	}
+
+	.section-image{
+		img{
+			display: block;
+			max-width: 100%;
+			height: auto;
+		}
+
+		&.with-corner{
+			padding-left: 6px;
+			padding-bottom: 6px;
+			position: relative;
+
+			&:before{
+				content: '';
+				display: block;
+				width: 2px;
+				height: 65%;
+				background: $primary;
+				position: absolute;
+				left: 0;
+				bottom: 0;
+			}
+
+			&:after{
+				content: '';
+				display: block;
+				width: 60px;
+				height: 2px;
+				background: $primary;
+				position: absolute;
+				left: 0;
+				bottom: 0;
+			}
+		}
+	}
+}

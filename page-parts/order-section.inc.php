@@ -1,4 +1,7 @@
-<section class="order-section">
+<?php isset($order_section_top_padding) || $order_section_top_padding = false; ?>
+<?php $order_section_top_padding ? $addClass = 'with-top-padding' : $addClass = '' ?>
+
+<section class="order-section <?= $addClass ?>">
 	<div class="container">
 		<div class="section-inner">
 			<div class="section-image">

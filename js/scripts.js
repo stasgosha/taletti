@@ -39,6 +39,26 @@ $(document).ready(function(){
 		$(".big-slider").closest('.big-slider-section').find('.current').text(current);
 	});
 
+	$('.photos-slider').slick({
+		arrows: true,
+		dots: true,
+		speed: 600,
+		slidesToShow: 3,
+		slidesToScroll: 1,
+		infinite: true
+	});
+
+	$('.brands-slider').slick({
+		arrows: true,
+		dots: true,
+		speed: 600,
+		slidesToShow: 4,
+		slidesToScroll: 1,
+		infinite: true
+	});
+
+	equalSlideHeight('.brands-slider');
+
 
 	// Tabs
 	$("[data-tab]").click(function(e){

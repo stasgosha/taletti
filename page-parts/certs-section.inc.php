@@ -1,4 +1,5 @@
 <?php 
+	$addClass = '';
 	isset($certs_big_paddings) && $certs_big_paddings && $addClass = 'big-paddings';
 ?>
 

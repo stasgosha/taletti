@@ -6,7 +6,7 @@
 						<a href="#" class="category-link">О компании</a>
 						<ul class="footer-nav">
 							<li><a href="#">Каталоги</a></li>
-							<li><a href="#">Производство</a></li>
+							<li><a href="factory.php">Производство</a></li>
 							<li><a href="#">Продукция</a></li>
 							<li><a href="#">Доставка и оплата</a></li>
 							<li><a href="#">Новости</a></li>

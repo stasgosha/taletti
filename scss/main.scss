@@ -29,6 +29,17 @@
 @import "components/sections/our-dealers-section";
 @import "components/sections/materials-section";
 @import "components/sections/want-to-be-a-dealer-section";
+@import "components/sections/receipts-section";
+@import "components/sections/factory-about-section";
+@import "components/sections/factory-facilities-section";
+@import "components/sections/photos-slider-section";
+@import "components/sections/brands-section";
+@import "components/sections/factory-features-info-section";
+@import "components/sections/text-with-image-section";
+@import "components/sections/write-to-ceo-section";
+@import "components/sections/contacts-page";
+@import "components/sections/page-header-section";
+@import "components/sections/services-section";
 
 // Footer
 @import "components/footer/footer";
@@ -43,3 +54,5 @@
 @import "components/common/pagination";
 @import "components/common/add-request-block";
 @import "components/common/material-card";
+@import "components/common/big-nav";
+@import "components/common/photos-slider";

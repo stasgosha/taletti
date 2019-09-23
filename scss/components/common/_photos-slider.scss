@@ -1,0 +1,41 @@
+.photos-slider{
+	.slide{
+		img{
+			display: block;
+			max-width: 100%;
+			height: auto;
+		}
+	}
+
+	.slick-arrow{
+		border: 0;
+
+		&:before{
+			transition: all $t;
+			opacity: 1;
+		}
+
+		&.slick-prev{
+			left: -110px;
+		}
+
+		&.slick-next{
+			right: -110px;
+		}
+	}
+
+	@media screen and (max-width: 1450px){
+		width: calc(100% - 50px) !important;
+		margin: 0 auto !important;
+
+		.slick-arrow{
+			&.slick-prev{
+				left: -60px;
+			}
+
+			&.slick-next{
+				right: -60px;
+			}
+		}
+	}
+}

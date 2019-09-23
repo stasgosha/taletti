@@ -4,6 +4,8 @@
 	flex-wrap: wrap;
 	width: 100%;
 	font-family: $second-font;
+	position: relative;
+	z-index: 5;
 
 	li{
 		font-size: 13px;
@@ -29,6 +31,12 @@
 
 			&:hover{
 				color: $primary;
+			}
+		}
+
+		.white &{
+			&:before{
+				background-image: url(../img/icons/breadcrumb-white.png);
 			}
 		}
 

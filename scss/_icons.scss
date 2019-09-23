@@ -54,6 +54,10 @@
 		width: 25px;
 		height: 25px;
 	}
+
+	&.orange{
+		background-image: url(../img/icons/phone-big.png);
+	}
 }
 
 .icon-arrow-right{
@@ -78,12 +82,24 @@
 	width: 13px;
 	height: 12px;
 	background: url(../img/icons/email.png) no-repeat center center;
+
+	&.big{
+		width: 24px;
+		height: 18px;
+		background: url(../img/icons/email-big.png) no-repeat center center;
+	}
 }
 
 .icon-location{
 	width: 12px;
 	height: 16px;
 	background: url(../img/icons/location.png) no-repeat center center;
+
+	&.big{
+		width: 18px;
+		height: 24px;
+		background: url(../img/icons/location-big.png) no-repeat center center;
+	}
 }
 
 .icon-chevron-left{
@@ -102,4 +118,10 @@
 	width: 12px;
 	height: 11px;
 	background: url(../img/icons/download.png) no-repeat right center;
+}
+
+.icon-metro{
+	width: 25px;
+	height: 31px;
+	background: url(../img/icons/metro.png) no-repeat right center;
 }

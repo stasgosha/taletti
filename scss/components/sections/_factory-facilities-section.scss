@@ -1,0 +1,39 @@
+.factory-facilities-section{
+	padding: 40px 0;
+
+	.section-image{
+		width: 100%;
+		padding-left: 6px;
+		padding-bottom: 6px;
+		position: relative;
+
+		&:before{
+			content: '';
+			display: block;
+			width: 2px;
+			height: 65%;
+			background: $primary;
+			position: absolute;
+			left: 0;
+			bottom: 0;
+		}
+
+		&:after{
+			content: '';
+			display: block;
+			width: 60px;
+			height: 2px;
+			background: $primary;
+			position: absolute;
+			left: 0;
+			bottom: 0;
+		}
+
+		img{
+			display: block;
+			width: 100%;
+			height: auto;
+			border-radius: 0 0 70px;
+		}
+	}
+}
