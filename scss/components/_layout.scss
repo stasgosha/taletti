@@ -13,6 +13,7 @@ body{
 	color: $text-color;
 	font-family: $main-font;
 	background: $body-bg;
+	overflow-x: hidden;
 }
 
 a, button{
@@ -64,8 +65,15 @@ ul, ol{
 
 .modal{
 	.modal-content{
+		border: 0;
+		border-radius: 15px;
+
 		.modal-body{
-			padding: 30px 35px 50px;
+			padding: 45px 35px;
+
+			@media screen and (max-width: 767px){
+				padding: 35px 25px;
+			}
 		}
 	}
 
@@ -81,21 +89,111 @@ ul, ol{
 
 	.modal-close{
 		position: absolute;
-		right: -22px;
-		top: -22px;
+		right: 8px;
+		top: 12px;
 		z-index: 5;
 		border-radius: 50%;
 		cursor: pointer;
+		width: 36px;
+		height: 36px;
+		border: 2px solid #ebebeb;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		transition: all $t;
+
+		&:hover{
+			border-color: $primary;
+		}
 
 		i{
 			display: block;
 			cursor: pointer;
 		}
+
+		@media screen and (max-width: 767px){
+			width: 30px;
+			height: 30px;
+		}
+	}
+
+	.modal-caption{
+		font-size: 24px;
+		line-height: 26px;
+		padding-bottom: 15px;
+		position: relative;
+		margin-bottom: 25px;
+		text-align: center;
+		font-weight: 400;
+		color: $text-dark;
+
+		&.big{
+			font-size: 32px;
+			line-height: 36px;
+		}
+
+		.small{
+			font-size: 20px;
+			display: block;
+			padding-top: 5px;
+
+			@media screen and (max-width: 767px){
+				font-size: 16px;
+				line-height: 20px;
+			}
+		}
+
+		&:after{
+			content: '';
+			display: block;
+			width: 30px;
+			height: 2px;
+			background: #e9e9e9;
+			position: absolute;
+			left: 50%;
+			bottom: 0;
+			transform: translateX(-50%);
+		}
+	}
+
+	.sucess-message{
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+
+		p{
+			font-size: 20px;
+			line-height: 1.3;
+			color: $text-dark;
+			font-weight: 400;
+			text-align: center;
+			margin-bottom: 30px;
+		}
+
+		img{
+			display: block;
+		}
+	}
+
+	.modal-form{
+		.form-fields{
+			margin-bottom: 25px;
+		}
+
+		.form-footer{
+			display: flex;
+			align-items: center;
+			justify-content: center;
+
+			.btn{
+				width: 215px;
+			}
+		}
 	}
 
 	&.narrow{
 		.modal-dialog{
-			max-width: 340px;
+			max-width: 370px;
 		}
 	}
 }

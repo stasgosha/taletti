@@ -18,6 +18,7 @@
 	<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
 	<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
 	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.7/css/jquery.fancybox.min.css">
+	<link rel="stylesheet" href="css/flickity.css">
 	<link rel="stylesheet" href="css/main.css">
 	<?php //wp_head(); ?>
 </head>
@@ -69,7 +70,20 @@
 						<div class="header-block">
 							<ul class="top-nav">
 								<li><a href="about.php">О компании</a></li>
-								<li><a href="catalog.php">Продукция</a></li>
+								<li>
+									<a href="catalog.php">Продукция</a>
+									<ul class="sub-menu">
+										<li><a href="#">Бумага для выпечки</a></li>
+										<li><a href="production.php">Капсулы бумажные</a></li>
+										<li><a href="#">Бумажные формы</a></li>
+										<li><a href="#">Формы тюльпан</a></li>
+										<li><a href="#">Ажурные салфетки</a></li>
+										<li><a href="#">Подложки и диски</a></li>
+										<li><a href="#">Кондитерские мешки</a></li>
+										<li><a href="#">Бордюрная лента</a></li>
+										<li><a href="#">Печать на упаковке</a></li>
+									</ul>
+								</li>
 								<li><a href="delivery.php">Доставка и оплата</a></li>
 								<li><a href="news.php">Новости</a></li>
 								<li><a href="dealers.php">Дилеры</a></li>

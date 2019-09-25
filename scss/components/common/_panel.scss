@@ -2,12 +2,17 @@
 .panel{
 	overflow: hidden;
 	height: 100vh;
-	background: #ccc;
+	background: #fff;
 	position: relative;
 	z-index: 1000;
+	transition: box-shadow $t;
+
+	&[style*="left: 0px;"]{
+		box-shadow: 5px 0 25px rgba(#000, .2);
+	}
 
 	.panel-inner{
-		padding: 20px 0;
+		padding: 40px 0;
 		height: 100vh;
 		overflow-y: auto;
 		overflow-x: hidden !important;
@@ -16,10 +21,145 @@
 	.panel-nav{
 		list-style: none;
 		width: 100%;
-		padding: 0 15px;
+		padding-bottom: 30px;
+		font-weight: 400;
+
+		> li{
+			> a{
+				display: block;
+				font-size: 18px;
+				line-height: 22px;
+				padding: 10px 25px;
+				text-transform: uppercase;
+				color: $text-dark;
+			}
+
+			.sub-menu{
+				padding: 20px 25px;
+				background: #f9f9f9;
+				margin: 10px 0;
+				display: none;
+
+				li{
+					margin-bottom: 10px;
+
+					&:last-child{
+						margin-bottom: 0;
+					}
+
+					a{
+						color: $text-dark;
+						font-size: 14px;
+						line-height: 24px;
+						letter-spacing: 0.05em;
+					}
+
+					&.current-menu-item{
+						a{
+							color: $primary;
+							cursor: default;
+						}
+					}
+				}
+			}
+
+			&.menu-item-has-children{
+				position: relative;
+
+				&:after{
+					content: '';
+					display: block;
+					height: 42px;
+					width: 50px;
+					position: absolute;
+					right: 0;
+					top: 0;
+					z-index: 5;
+					background: url(../img/icons/opener.png) no-repeat center center;
+					cursor: pointer;
+				}
+
+				&.opened{
+					&:after{
+						transform: rotate(-180deg);
+					}
+				}
+			}
+
+			&.current-menu-item,
+			&.current-menu-parent{
+				> a{
+					position: relative;
+
+					&:before{
+						content: '';
+						display: block;
+						height: 27px;
+						width: 5px;
+						background: $primary;
+						position: absolute;
+						left: 0;
+						top: 50%;
+						transform: translateY(-50%);
+					}
+				}
+			}
+		}
+
+		li{
+			&.current-menu-item,
+			&.current-menu-parent{
+				> a{
+					color: $primary;
+				}
+			}
+
+			&.current-menu-item{
+				> a{
+					cursor: default;
+					position: relative;
+				}
+			}
+		}
 	}
 
 	.panel-content{
-		padding: 0 15px;
+		padding: 30px 25px 0;
+		position: relative;
+
+		&:before{
+			content: '';
+			display: block;
+			width: calc(100% - 50px);
+			height: 1px;
+			position: absolute;
+			top: 0;
+			left: 25px;
+			background: #d7d7d7;
+		}
+
+		.socials-list{
+			margin-top: 25px;
+		}
+
+		.btn{
+			padding-left: 25px;
+			padding-right: 25px;
+		}
+
+		.panel-phone{
+			margin-bottom: 20px;
+			font-size: 20px;
+			line-height: 1.1;
+			color: $text-dark;
+			text-decoration: none;
+			letter-spacing: 0.05em;
+			display: block;
+			font-weight: 400;
+
+			&:hover{
+				color: $primary;
+			}
+		}
 	}
 }

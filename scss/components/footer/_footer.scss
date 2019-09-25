@@ -132,6 +132,22 @@
 			margin-bottom: 0;
 		}
 	}
+
+	&.dark{
+		.item{
+			.item-text{
+				color: $text-dark;
+
+				a{
+					color: $text-dark;
+
+					&:hover{
+						color: $primary;
+					}
+				}
+			}
+		}
+	}
 }
 
 .category-link{

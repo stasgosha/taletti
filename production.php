@@ -282,14 +282,14 @@
 					</div>
 					<div class="section-images-slider">
 						<div class="manufacture-images-slider">
-							<div class="slide">
+							<div class="slide-wrap">
 								<img src="img/tmp/manuf-1.png" alt="">
 							</div>
-							<div class="slide">
+							<div class="slide-wrap">
 								<img src="img/tmp/manuf-2.png" alt="">
 							</div>
-							<div class="slide">
-								<img src="//placeimg.com/270/390/any" alt="">
+							<div class="slide-wrap">
+								<img src="img/tmp/manuf-1.png" alt="">
 							</div>
 						</div>
 						<div class="slider-pagination">
