@@ -54,6 +54,10 @@ ul, ol{
 	.page-content{
 		&.inner-page{
 			padding-top: 174px;
+
+			@media screen and (max-width: 991px){
+				padding-top: 112px;
+			}
 		}
 	}
 }
@@ -286,6 +290,16 @@ ul, ol{
 			}
 		}
 	}
+
+	@media screen and (max-width: 767px){
+		&.slick-dotted{
+			margin-bottom: 30px !important;
+		}
+
+		.slick-dots{
+			bottom: -30px;
+		}
+	}
 }
 
 .slick-arrow{
@@ -321,6 +335,19 @@ ul, ol{
 			background-image: url(../img/icons/slider-arrows-white.png);
 		}
 	}
+
+	.no-borders &{
+		border: 0;
+
+		&:before{
+			opacity: 1;
+		}
+	}
+
+	@media screen and (max-width: 1199px){
+		width: 44px;
+		height: 44px;
+	}
 }
 
 .slider-pagination{
@@ -353,25 +380,29 @@ ul, ol{
 }
 
 .section-default-paddings{
-	padding: 85px 0;
+	padding: 85px 0 !important;
 }
 
 .section-small-paddings{
-	padding: 40px 0;
+	padding: 40px 0 !important;
 }
 
 .section-default-padding-top{
-	padding-top: 85px;
+	padding-top: 85px !important;
 }
 
 .section-small-padding-top{
-	padding-top: 40px;
+	padding-top: 40px !important;
 }
 
 .section-default-padding-bottom{
-	padding-bottom: 85px;
+	padding-bottom: 85px !important;
 }
 
 .section-small-padding-bottom{
-	padding-bottom: 40px;
+	padding-bottom: 40px !important;
+}
+
+a[href^="tel:"]{
+	white-space: nowrap;
 }

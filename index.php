@@ -11,11 +11,17 @@
 			</div>
 			<div class="big-slider white-arrows">
 				<div class="slide">
-					<div class="slide-bg"><img src="img/slides/slide-1-bg.jpg" alt=""></div>
+					<div class="slide-bg">
+						<!-- Тут может быть видео -->
+						<img src="img/slides/slide-1-bg.jpg" alt="">
+					</div>
 					<div class="container">
 						<div class="slide-body">
 							<h1 class="slide-caption tpg-h1">Производство широкого ассортимента упаковочных изделий</h1>
-							<a href="#" class="btn">Оформить заказ</a>
+							<a href="#" class="btn">
+								<span class="d-none d-md-inline">Оформить заказ</span>
+								<span class="d-md-none">Заказать</span>
+							</a>
 						</div>
 					</div>
 				</div>
@@ -24,7 +30,10 @@
 					<div class="container">
 						<div class="slide-body">
 							<h1 class="slide-caption tpg-h1">Производство широкого</h1>
-							<a href="#" class="btn">Оформить заказ</a>
+							<a href="#" class="btn">
+								<span class="d-none d-md-inline">Оформить заказ</span>
+								<span class="d-md-none">Заказать</span>
+							</a>
 						</div>
 					</div>
 				</div>
@@ -33,7 +42,10 @@
 					<div class="container">
 						<div class="slide-body">
 							<h1 class="slide-caption tpg-h1">Производство широкого ассортимента упаковочных изделий</h1>
-							<a href="#" class="btn">Оформить заказ</a>
+							<a href="#" class="btn">
+								<span class="d-none d-md-inline">Оформить заказ</span>
+								<span class="d-md-none">Заказать</span>
+							</a>
 						</div>
 					</div>
 				</div>
@@ -42,7 +54,10 @@
 					<div class="container">
 						<div class="slide-body">
 							<h1 class="slide-caption tpg-h1">Производство широкого ассортимента упаковочных изделий</h1>
-							<a href="#" class="btn">Оформить заказ</a>
+							<a href="#" class="btn">
+								<span class="d-none d-md-inline">Оформить заказ</span>
+								<span class="d-md-none">Заказать</span>
+							</a>
 						</div>
 					</div>
 				</div>
@@ -51,7 +66,10 @@
 					<div class="container">
 						<div class="slide-body">
 							<h1 class="slide-caption tpg-h1">Производство широкого ассортимента упаковочных изделий</h1>
-							<a href="#" class="btn">Оформить заказ</a>
+							<a href="#" class="btn">
+								<span class="d-none d-md-inline">Оформить заказ</span>
+								<span class="d-md-none">Заказать</span>
+							</a>
 						</div>
 					</div>
 				</div>
@@ -75,7 +93,7 @@
 						<p>Продукция компании направлена в первую очередь на кондитерские и хлебопекаренные предприятия, ориентированные как на массовое производство, так и на эксклюзивную продукцию, требующую особого внимания к процессу изготовления, оформления и упаковки.</p>
 					</div>
 				</div>
-				<div class="stats-list">
+				<div class="stats-list d-none d-sm-flex">
 					<div class="item">
 						<div class="item-value" data-value="15">15</div>
 						<div class="item-text">лет на рынке упаковки</div>
@@ -112,7 +130,7 @@
 				</div>
 				<div class="section-inner">
 					<div class="section-news-wrapper">
-						<div class="cards-list columns-2">
+						<div class="cards-list columns-2 md-columns-1">
 							<div class="item">
 								<div class="news-card">
 									<div class="card-body">
@@ -124,7 +142,7 @@
 									</div>
 								</div>
 							</div>
-							<div class="item">
+							<div class="item d-sm-none d-lg-block">
 								<div class="news-card">
 									<div class="card-body">
 										<div class="card-date">22 августа</div>

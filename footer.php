@@ -2,21 +2,21 @@
 		<footer class="footer">
 			<div class="container">
 				<div class="footer-row first">
-					<div class="footer-block">
-						<a href="#" class="category-link">О компании</a>
+					<div class="footer-block d-none d-md-block">
+						<a href="about.php" class="category-link">О компании</a>
 						<ul class="footer-nav">
-							<li><a href="#">Каталоги</a></li>
+							<li><a href="catalog.php">Каталоги</a></li>
 							<li><a href="factory.php">Производство</a></li>
-							<li><a href="#">Продукция</a></li>
-							<li><a href="#">Доставка и оплата</a></li>
-							<li><a href="#">Новости</a></li>
+							<li><a href="catalog.php">Продукция</a></li>
+							<li><a href="delivery.php">Доставка и оплата</a></li>
+							<li><a href="news.php">Новости</a></li>
 						</ul>
 					</div>
-					<div class="footer-block">
-						<a href="#" class="category-link">Продукция</a>
+					<div class="footer-block d-none d-md-block">
+						<a href="catalog.php" class="category-link">Продукция</a>
 						<ul class="footer-nav">
 							<li><a href="#">Бумага для выпечки</a></li>
-							<li><a href="#">Бумажные капсулы</a></li>
+							<li><a href="production.php">Бумажные капсулы</a></li>
 							<li><a href="#">Бумажные формы</a></li>
 							<li><a href="#">Ажурные салфетки</a></li>
 							<li><a href="#">Подложки и диски</a></li>
@@ -25,12 +25,16 @@
 							<li><a href="#">Печать на упаковке</a></li>
 						</ul>
 					</div>
-					<div class="footer-block">
-						<a href="#" class="category-link">Статьи</a>
-						<a href="#" class="category-link">Дилеры</a>
-						<a href="#" class="category-link">Контакты</a>
+					<div class="footer-block d-none d-md-block">
+						<a href="receipts.php" class="category-link">Рецепты</a>
+						<a href="news.php" class="category-link">Статьи</a>
+						<a href="dealers.php" class="category-link">Дилеры</a>
+						<a href="contacts.php" class="category-link">Контакты</a>
 					</div>
 					<div class="footer-block">
+						<a href="index.php" class="footer-logo d-md-none">
+							<img src="img/taletti.png" alt="">
+						</a>
 						<a href="tel:+74954431730" class="footer-phone-link">+7 (495) 443-17-30</a>
 						<div class="socials-list">
 							<div class="item">
@@ -53,14 +57,17 @@
 							</div>
 						</div>
 					</div>
+					<div class="footer-block d-md-none">
+						<p class="copyright">ООО «Талетти» © 2011 - <?= date('Y') ?></p>
+					</div>
 				</div>
 				<div class="footer-row second">
-					<div class="footer-block">
+					<div class="footer-block d-none d-md-block">
 						<a href="index.php" class="footer-logo">
 							<img src="img/taletti.png" alt="">
 						</a>
 					</div>
-					<div class="footer-block wide">
+					<div class="footer-block wide d-none d-md-block">
 						<p class="copyright">ООО «Талетти» © 2011 - <?= date('Y') ?></p>
 					</div>
 					<div class="footer-block">
@@ -95,6 +102,7 @@
 	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-migrate/1.4.1/jquery-migrate.min.js"></script>
 	<script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.7/js/jquery.fancybox.min.js"></script>
 	<script src="js/bootstrap.bundle.min.js"></script>
 	<script src="js/bigSlide.min.js"></script>
 	<script src="js/scripts.js"></script>

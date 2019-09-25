@@ -9,12 +9,19 @@
 
 	.section-image{
 		position: relative;
+		margin-bottom: 55px !important;
 
 		p{
-			position: absolute;
-			max-width: 55%;
-			right: 11%;
-			top: 8%;
+			// position: absolute;
+			max-width: 55% !important;
+			margin-left: 43%;
+			// right: 11%;
+			// top: 8%;
+			// margin-right: 10%;
+			// float: right;
+			position: relative;
+			margin-bottom: -70px;
+			margin-top: 0 !important;
 		}
 
 		img{

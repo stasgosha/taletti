@@ -12,28 +12,28 @@
 			<div class="section-slider">
 				<div class="certs-slider">
 					<div class="slide">
-						<a href="#" class="cert-link">
+						<a href="img/tmp/cert.png" class="cert-link fancybox" rel="certs">
 							<img src="img/tmp/cert.png" alt="">
 						</a>
 					</div>
 					<div class="slide">
-						<a href="#" class="cert-link">
+						<a href="img/tmp/cert.png" class="cert-link fancybox" rel="certs">
 							<img src="img/tmp/cert.png" alt="">
 						</a>
 					</div>
 					<div class="slide">
-						<a href="#" class="cert-link">
+						<a href="img/tmp/cert.png" class="cert-link fancybox" rel="certs">
 							<img src="img/tmp/cert.png" alt="">
 						</a>
 					</div>
 					<div class="slide">
-						<a href="#" class="cert-link">
+						<a href="img/tmp/cert.png" class="cert-link fancybox" rel="certs">
 							<img src="img/tmp/cert.png" alt="">
 						</a>
 					</div>
 				</div>
-				<div class="flex-end">
-					<a href="#" class="btn btn-light">Все сертификаты</a>
+				<div class="section-button flex-end sm-flex-center">
+					<a href="#" class="btn btn-light xs-fullwidth">Все сертификаты</a>
 				</div>
 			</div>
 			<div class="section-info">

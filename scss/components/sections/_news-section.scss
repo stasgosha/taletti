@@ -25,4 +25,30 @@
 		padding-left: 40px;
 		// align-self: flex-end;
 	}
+
+	@media screen and (max-width: 991px){
+		.section-news-wrapper,
+		.section-subscribe{
+			width: 50%;
+		}
+	}
+
+	@media screen and (max-width: 575px){
+		.section-inner{
+			flex-direction: column;
+
+			.section-news-wrapper,
+			.section-subscribe{
+				width: 100%;
+			}
+
+			.section-news-wrapper{
+				margin-bottom: 30px;
+			}
+
+			.section-subscribe{
+				padding-left: 0;
+			}
+		}
+	}
 }

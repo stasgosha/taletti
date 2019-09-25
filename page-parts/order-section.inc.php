@@ -42,7 +42,7 @@
 							</div>
 						</div>
 						<div class="form-send">
-							<button type="submit" class="btn">Заказать</button>
+							<button type="submit" class="btn xs-fullwidth">Заказать</button>
 						</div>
 					</div>
 				</form>

@@ -4,20 +4,10 @@
 	<div class="page-content inner-page">
 		<section class="breadcrumbs-section">
 			<div class="container">
-				<ol class="breadcrumbs" itemscope itemtype="http://schema.org/BreadcrumbList">
-					<li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-						<a itemprop="item" href="index.php">
-							<span itemprop="name">Главная</span>
-						</a>
-						<meta itemprop="position" content="1" />
-					</li>
-					<li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-						<a itemprop="item" href="functional-training.php.php">
-							<span itemprop="name"><?= $page_title ?></span>
-						</a>
-						<meta itemprop="position" content="2" />
-					</li>
-				</ol>
+				<ul class="breadcrumbs">
+					<li><a href="index.php">Главная</a></li>
+					<li><?= $page_title ?></li>
+				</ul>
 			</div>
 		</section>
 

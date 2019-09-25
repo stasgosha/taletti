@@ -114,6 +114,27 @@
 			transform: scale(1.03);
 		}
 	}
+
+	@media screen and (max-width: 1199px){
+		.card-image{
+			margin-bottom: 15px;
+		}
+
+		.card-body{
+			padding-left: 15px;
+			padding-right: 15px;
+		}
+
+		.card-caption{
+			font-size: 18px;
+		}
+
+		&.with-borders{
+			.card-content{
+				padding-bottom: 15px;
+			}
+		}
+	}
 }
 
 .big-news-card{

@@ -4,6 +4,10 @@
 
 	&.with-top-padding{
 		padding-top: 135px;
+
+		@media screen and (max-width: 767px){
+			padding-top: 40px;
+		}
 	}
 
 	&.small-top-padding{
@@ -36,6 +40,37 @@
 		.section-content{
 			padding-left: 35px;
 			width: 50%;
+			position: relative;
+			z-index: 2;
+		}
+
+		@media screen and (max-width: 767px){
+			flex-direction: column;
+
+			.section-image{
+				width: 100%;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				margin-bottom: -5%;
+
+				&.shift-down{
+					margin-bottom: -5%;
+				}
+
+				img{
+					display: block;
+					max-width: 300px;
+					height: auto;
+					position: static;
+					transform: none;
+				}
+			}
+
+			.section-content{
+				padding-left: 0;
+				width: 100%;
+			}
 		}
 	}
 
@@ -47,6 +82,18 @@
 
 		.bigger{
 			font-size: 36px;
+		}
+
+		@media screen and (max-width: 991px){
+			font-size: 18px;
+
+			.bigger{
+				font-size: 30px;
+			}
+		}
+
+		@media screen and (max-width: 767px){
+			text-align: center;
 		}
 	}
 }
@@ -62,7 +109,27 @@
 			padding-left: 60px;
 
 			.btn{
-				width: 215px;
+				@media screen and (min-width: 1200px){
+					width: 215px;
+				}
+			}
+		}
+
+		@media screen and (max-width: 991px){
+			flex-direction: column;
+			// align-items: stretch;
+
+			.form-send{
+				padding-left: 0;
+				padding-top: 20px;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				width: 100%;
+
+				.btn{
+					width: 215px;
+				}
 			}
 		}
 	}

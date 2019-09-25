@@ -1,2 +1,15 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat:300,400,500&display=swap&subset=cyrillic);
 @import url(https://fonts.googleapis.com/css?family=Noto+Sans:400,500&display=swap&subset=cyrillic);
+
+@font-face {
+	font-family: 'PT Rouble Sans';
+	src: url('../fonts/PTRoubleSans.ttf') format('truetype'),
+		url('../fonts/PTRoubleSans.woff') format('woff');
+	font-display: auto;
+	font-weight: normal;
+	font-style: normal;
+}
+
+.rouble{
+	font-family: 'PT Rouble Sans';
+}

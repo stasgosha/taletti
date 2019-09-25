@@ -1,5 +1,11 @@
 .services-section{
 	padding: 40px 0;
+
+	@media screen and (max-width: 1199px){
+		.cards-list{
+			justify-content: center;
+		}
+	}
 }
 
 .service-card{

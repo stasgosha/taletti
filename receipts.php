@@ -4,20 +4,10 @@
 	<div class="page-content inner-page">
 		<section class="breadcrumbs-section">
 			<div class="container">
-				<ol class="breadcrumbs" itemscope itemtype="http://schema.org/BreadcrumbList">
-					<li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-						<a itemprop="item" href="index.php">
-							<span itemprop="name">Главная</span>
-						</a>
-						<meta itemprop="position" content="1" />
-					</li>
-					<li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-						<a itemprop="item" href="functional-training.php.php">
-							<span itemprop="name"><?= $page_title ?></span>
-						</a>
-						<meta itemprop="position" content="2" />
-					</li>
-				</ol>
+				<ul class="breadcrumbs">
+					<li><a href="index.php">Главная</a></li>
+					<li><?= $page_title ?></li>
+				</ul>
 			</div>
 		</section>
 
@@ -26,16 +16,28 @@
 				<div class="section-caption">
 					<h1 class="sc-title"><?= $page_title ?></h1>
 				</div>
-				<ul class="big-nav">
-					<li><a href="#">Все блюда</a></li>
-					<li class="current-menu-item"><a href="#">Закуски</a></li>
-					<li><a href="#">Основные блюда</a></li>
-					<li><a href="#">Десерты</a></li>
-					<li><a href="#">Гарниры</a></li>
-					<li><a href="#">Сладкая выпечка</a></li>
-					<li><a href="#">Блюда из мяса</a></li>
-					<li><a href="#">Блюда из овощей</a></li>
-				</ul>
+				<div class="big-nav-wrapper">
+					<div class="big-nav-opener">
+						<div class="bars">
+							<div class="bar"></div>
+							<div class="bar"></div>
+							<div class="bar"></div>
+						</div>
+						<span>Рубрики</span>
+					</div>
+					<div class="big-nav-toggle">
+						<ul class="big-nav">
+							<li><a href="#">Все блюда</a></li>
+							<li class="current-menu-item"><a href="#">Закуски</a></li>
+							<li><a href="#">Основные блюда</a></li>
+							<li><a href="#">Десерты</a></li>
+							<li><a href="#">Гарниры</a></li>
+							<li><a href="#">Сладкая выпечка</a></li>
+							<li><a href="#">Блюда из мяса</a></li>
+							<li><a href="#">Блюда из овощей</a></li>
+						</ul>
+					</div>
+				</div>
 				<div class="cards-list columns-4 lg-columns-3 sm-columns-2 xs-columns-1">
 					<div class="item">
 						<div class="news-card with-video with-borders">

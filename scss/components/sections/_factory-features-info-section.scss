@@ -20,6 +20,23 @@
 			&:last-child{
 				margin-bottom: 0;
 			}
+
+			@media screen and (max-width: 991px){
+				flex-direction: column;
+
+				&.reverse{
+					flex-direction: column;
+				}
+
+				.section-image,
+				.section-content{
+					width: 100%;
+				}
+
+				.section-content{
+					margin-bottom: 30px;
+				}
+			}
 		}
 	}
 

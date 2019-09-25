@@ -55,4 +55,25 @@
 			}
 		}
 	}
+
+	@media screen and (max-width: 767px){
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+
+		.block-image{
+			order: 1;
+			margin-bottom: 15px;
+		}
+
+		.block-text{
+			order: 2;
+			margin-bottom: 15px;
+		}
+
+		.block-info{
+			order: 3;
+			text-align: center;
+		}
+	}
 }

@@ -4,20 +4,10 @@
 	<div class="page-content inner-page">
 		<section class="breadcrumbs-section">
 			<div class="container">
-				<ol class="breadcrumbs" itemscope itemtype="http://schema.org/BreadcrumbList">
-					<li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-						<a itemprop="item" href="index.php">
-							<span itemprop="name">Главная</span>
-						</a>
-						<meta itemprop="position" content="1" />
-					</li>
-					<li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-						<a itemprop="item" href="functional-training.php.php">
-							<span itemprop="name"><?= $page_title ?></span>
-						</a>
-						<meta itemprop="position" content="2" />
-					</li>
-				</ol>
+				<ul class="breadcrumbs">
+					<li><a href="index.php">Главная</a></li>
+					<li><?= $page_title ?></li>
+				</ul>
 			</div>
 		</section>
 
@@ -36,7 +26,7 @@
 						<p>Продукция компании направлена в первую очередь на кондитерские и хлебопекаренные предприятия, ориентированные как на массовое производство, так и на эксклюзивную продукцию, требующую особого внимания к процессу изготовления, оформления и упаковки.</p>
 					</div>
 				</div>
-				<div class="stats-list">
+				<div class="stats-list d-none d-sm-flex">
 					<div class="item">
 						<div class="item-value" data-value="15">15</div>
 						<div class="item-text">лет на рынке упаковки</div>
@@ -62,9 +52,11 @@
 
 		<section class="text-with-image-section">
 			<div class="container">
+				<div class="section-caption no-decoration text-left">
+					<h3 class="sc-title">Мы заботимся о еде, <br>которую вы едите</h3>
+				</div>
 				<div class="section-inner">
 					<div class="section-content tpg">
-						<h3>Мы заботимся о еде, <br>которую вы едите</h3>
 						<p>Продукция компании направлена в первую очередь на кондитерские и хлебопекаренные предприятия, ориентированные как на массовое производство, так и на эксклюзивную продукцию, требующую особого внимания к процессу изготовления, оформления и упаковки.</p>
 						<p>С математической точки зрения гравитационная сингулярность является множеством особых точек решения уравнений Эйнштейна. Однако при этом необходимо строго отличать так называемую «координатную сингулярность» от истинной гравитационной. Координатные сингулярности возникают тогда, когда принятые для решения уравнений.</p>
 					</div>
@@ -101,8 +93,8 @@
 								</a>
 							</div>
 						</div>
-						<div class="flex-end">
-							<a href="#" class="btn btn-light">Все сертификаты</a>
+						<div class="section-button flex-end sm-flex-center">
+							<a href="#" class="btn btn-light xs-fullwidth">Все сертификаты</a>
 						</div>
 					</div>
 					<div class="section-info">
@@ -144,9 +136,11 @@
 
 		<section class="text-with-image-section big-top-padding">
 			<div class="container">
+				<div class="section-caption no-decoration text-left">
+					<h3 class="sc-title">Экологичность</h3>
+				</div>
 				<div class="section-inner">
 					<div class="section-content tpg">
-						<h3>Экологичность</h3>
 						<p>Вся наша упаковка является возобновляемой, перерабатываемой и биоразлагаемой. И она может идти прямо из морозильник в микроволновую печь или обычную духовку. С математической точки зрения гравитационная сингулярность является множеством особых точек решения уравнений Эйнштейна. Однако при этом необходимо строго отличать так называемую координатную сингулярность.</p>
 						<p>От истинной гравитационной координатные сингулярности возникают тогда, когда принятые для решения уравнений Эйнштейна координатные условия оказываются неудачными, так что, например, сами принятые координаты становятся многозначными (координатные линии пересекаются) или наоборот, не покрывают всего многообразия.</p>
 					</div>
@@ -184,9 +178,11 @@
 
 		<section class="text-with-image-section">
 			<div class="container">
+				<div class="section-caption no-decoration text-left">
+					<h3 class="sc-title">Сотрудничество с Taletti</h3>
+				</div>
 				<div class="section-inner">
 					<div class="section-content tpg">
-						<h3>Сотрудничество с Taletti</h3>
 						<h4>Бизнес наших постоянных клиентов <br>процветает, попробуйте и вы.</h4>
 						<p>Вся наша упаковка является возобновляемой, перерабатываемой и биоразлагаемой. И она может идти прямо из морозильник в микроволновую печь или обычную духовку. С математической точки зрения гравитационная сингулярность является множеством особых точек решения уравнений Эйнштейна. Однако при этом необходимо строго отличать так называемую координатную сингулярность.</p>
 						<p>От истинной гравитационной координатные сингулярности возникают тогда, когда принятые для решения уравнений Эйнштейна координатные условия оказываются неудачными, так что, например, сами принятые координаты становятся многозначными (координатные линии пересекаются) или наоборот, не покрывают всего многообразия.</p>

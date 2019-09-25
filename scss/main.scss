@@ -40,6 +40,11 @@
 @import "components/sections/contacts-page";
 @import "components/sections/page-header-section";
 @import "components/sections/services-section";
+@import "components/sections/logistic-section";
+@import "components/sections/transport-companies-section";
+@import "components/sections/page-404-section";
+@import "components/sections/assortment-section";
+@import "components/sections/other-products-section";
 
 // Footer
 @import "components/footer/footer";
@@ -56,3 +61,6 @@
 @import "components/common/material-card";
 @import "components/common/big-nav";
 @import "components/common/photos-slider";
+@import "components/common/product-card";
+@import "components/common/advantage-block";
+@import "components/common/menu-opener";

@@ -4,20 +4,10 @@
 	<div class="page-content inner-page">
 		<section class="breadcrumbs-section white">
 			<div class="container">
-				<ol class="breadcrumbs" itemscope itemtype="http://schema.org/BreadcrumbList">
-					<li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-						<a itemprop="item" href="index.php">
-							<span itemprop="name">Главная</span>
-						</a>
-						<meta itemprop="position" content="1" />
-					</li>
-					<li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-						<a itemprop="item" href="functional-training.php.php">
-							<span itemprop="name"><?= $page_title ?></span>
-						</a>
-						<meta itemprop="position" content="2" />
-					</li>
-				</ol>
+				<ul class="breadcrumbs">
+					<li><a href="index.php">Главная</a></li>
+					<li><?= $page_title ?></li>
+				</ul>
 			</div>
 		</section>
 
@@ -58,12 +48,14 @@
 
 		<section class="text-with-image-section big-top-padding">
 			<div class="container">
+				<div class="section-caption no-decoration text-left">
+					<h3 class="sc-title">Мы всегда открыты для сотрудничества</h3>
+				</div>
 				<div class="section-inner image-smaller">
 					<div class="section-image">
 						<img src="img/section-images/consult.jpg" alt="">
 					</div>
 					<div class="section-content tpg">
-						<h3>Мы всегда открыты для сотрудничества</h3>
 						<p>Наша компания является частью торгово-производственного альянса на территории России, в который входят компании объединяющего поставки сырья из жиростойких материалов на основе бумаги и картона от мировых лидеров отрасли. Продукция компании направлена в первую очередь на кондитерские и хлебопекаренные предприятия, ориентированные как на массовое производство, так и на эксклюзивную продукцию, требующую особого внимания.</p>
 						<a href="#" class="btn">Консультация</a>
 					</div>
@@ -73,7 +65,7 @@
 
 		<section class="services-section">
 			<div class="container">
-				<div class="cards-list columns-4">
+				<div class="cards-list columns-4 lg-columns-3 md-columns-2 xs-columns-1">
 					<div class="item">
 						<div class="service-card">
 							<div class="card-image no-crop">

@@ -1,0 +1,42 @@
+.advantage-block{
+	display: flex;
+	align-items: center;
+	padding: 20px 15px 20px 30px;
+	border: 1px solid #d7d7d7;
+	margin-top: 40px;
+
+	.block-icon-wrapper{
+		flex: none;
+		margin-right: 30px;
+		text-align: center;
+
+		.block-icon{
+			display: flex;
+			margin-bottom: 8px;
+
+			img{
+				display: block;
+				flex: none;
+				margin-right: 6px;
+			}
+
+			span{
+				font-size: 42px;
+				line-height: 1;
+				color: $primary;
+				font-weight: 300;
+				letter-spacing: -0.025em;
+			}
+		}
+	}
+
+	@media screen and (max-width: 575px){
+		flex-direction: column;
+		align-items: flex-start;
+
+		.block-icon-wrapper{
+			margin-right: 0;
+			margin-bottom: 20px;
+		}
+	}
+}

@@ -2,9 +2,9 @@ $(document).ready(function(){
 
 	// Mobile nav
 	$('.menu-opener').bigSlide({
-		side: 'right',
+		side: 'left',
 		easyClose: true,
-		menuWidth: '260px'
+		menuWidth: '280px'
 	});
 
 	// Sliders
@@ -45,7 +45,21 @@ $(document).ready(function(){
 		speed: 600,
 		slidesToShow: 3,
 		slidesToScroll: 1,
-		infinite: true
+		infinite: true,
+		responsive: [
+			{
+				breakpoint: 768,
+				settings: {
+					slidesToShow: 2,
+				}
+			},
+			{
+				breakpoint: 480,
+				settings: {
+					slidesToShow: 1,
+				}
+			}
+		]
 	});
 
 	$('.brands-slider').slick({
@@ -54,10 +68,68 @@ $(document).ready(function(){
 		speed: 600,
 		slidesToShow: 4,
 		slidesToScroll: 1,
-		infinite: true
+		infinite: true,
+		responsive: [
+			{
+				breakpoint: 992,
+				settings: {
+					slidesToShow: 3,
+				}
+			},
+			{
+				breakpoint: 576,
+				settings: {
+					slidesToShow: 2,
+				}
+			},
+			{
+				breakpoint: 400,
+				settings: {
+					slidesToShow: 1,
+				}
+			}
+		]
 	});
 
 	equalSlideHeight('.brands-slider');
+
+	$('.how-we-work-slider').slick({
+		arrows: true,
+		dots: true,
+		speed: 600,
+		slidesToShow: 2,
+		slidesToScroll: 1,
+		infinite: true,
+		responsive: [
+			{
+				breakpoint: 576,
+				settings: {
+					slidesToShow: 1,
+				}
+			}
+		]
+	});
+
+	equalSlideHeight('.how-we-work-slider');
+
+	$('.features-slider').slick({
+		arrows: true,
+		dots: true,
+		speed: 600,
+		slidesToShow: 2,
+		slidesToScroll: 1,
+		infinite: true,
+		responsive: [
+			{
+				breakpoint: 576,
+				settings: {
+					slidesToShow: 1,
+				}
+			}
+		]
+	});
+
+	equalSlideHeight('.features-slider');
 
 
 	// Tabs
@@ -120,6 +192,39 @@ $(document).ready(function(){
 
 	equalSlideHeight('.manufacture-images-slider');
 
+	$('.products-slider').slick({
+		arrows: true,
+		dots: false,
+		autoplay: false,
+		speed: 600,
+		slidesToShow: 4,
+		slidesToScroll: 1,
+		infinite: true,
+		responsive: [
+			{
+				breakpoint: 992,
+				settings:{
+					slidesToShow: 3
+				}
+			},
+			{
+				breakpoint: 768,
+				settings:{
+					slidesToShow: 2,
+					dots: true
+				}
+			},
+			{
+				breakpoint: 576,
+				settings: {
+					slidesToShow: 1,
+					dots: true
+				}
+			}
+		]
+	});
+
+	equalSlideHeight('.products-slider');
 
 
 	$('.certs-slider').slick({
@@ -130,12 +235,43 @@ $(document).ready(function(){
 		slidesToShow: 3,
 		slidesToScroll: 1,
 		infinite: true,
+		responsive: [
+			{
+				breakpoint: 992,
+				settings:{
+					slidesToShow: 2
+				}
+			},
+			{
+				breakpoint: 768,
+				settings:{
+					slidesToShow: 2,
+					dots: true
+				}
+			},
+			{
+				breakpoint: 576,
+				settings: {
+					slidesToShow: 1,
+					dots: true
+				}
+			}
+		]
+	});
+
+	// Big Nav
+	$('.big-nav-opener').click(function(){
+		$(this).toggleClass('active');
+
+		$(this).siblings('.big-nav-toggle').stop().slideToggle(300);
 	});
 
 
 	// Sticky Header
 	$(window).scroll(function(){
-		$(this).scrollTop() ? $('.header').addClass('sticky') : $('.header').removeClass('sticky');
+		$(this).scrollTop() >= 50 
+			? $('.header, .mobile-header').addClass('sticky') 
+			: $('.header, .mobile-header').removeClass('sticky');
 	});
 
 	// Accordions
@@ -143,6 +279,9 @@ $(document).ready(function(){
 		$(this).closest('.faq-accordion').toggleClass('opened')
 			.find('.accordion-content').stop().slideToggle(300);
 	});
+
+	// Fancybox
+	$(".slick-slide:not(.slick-cloned) .fancybox").fancybox();
 
 	// TODO: ↓↓↓ remove this script ↓↓↓
 	// Current menu item highlithing

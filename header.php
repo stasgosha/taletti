@@ -17,6 +17,7 @@
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
 	<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.7/css/jquery.fancybox.min.css">
 	<link rel="stylesheet" href="css/main.css">
 	<?php //wp_head(); ?>
 </head>
@@ -77,7 +78,66 @@
 							</ul>
 						</div>
 						<div class="header-block">
-							<button class="btn btn-light btn-white">Заказать звонок</button>
+							<button class="btn btn-light btn-white order-call-btn">Заказать звонок</button>
+						</div>
+					</div>
+				</div>
+			</header>
+			<header class="mobile-header <?= $header_class ?>">
+				<div class="container">
+					<div class="header-row first">
+						<div class="header-block">
+							<div class="menu-opener">
+								<div class="bars">
+									<div class="bar"></div>
+									<div class="bar"></div>
+									<div class="bar"></div>
+								</div>
+								<span>Меню</span>
+							</div>
+						</div>
+						<div class="header-block">
+							<div class="header-actions-list">
+								<div class="item">
+									<a href="tel:84957097810" class="phone-link">
+										<i class="icon-phone"></i>
+										<span>8 (495) 709-78-10</span>
+									</a>
+								</div>
+								<div class="item">
+									<div class="search-trigger">
+										<i class="icon-search"></i>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="header-row second">
+						<div class="header-block">
+							<a href="index.php" class="logo-block">
+								<img src="img/logo.png" alt="" class="hide-on-sticky">
+								<img src="img/logo-dark.png" alt="" class="on-sticky">
+								<!-- <video loop autoplay src="img/taletti_logo.mp4" type="video/mp4" muted>
+									<source src="img/taletti_logo.ogg" type="video/ogg">
+									<source src="img/taletti_logo.webm" type="video/webm">
+								</video> -->
+							</a>
+						</div>
+						<div class="header-block">
+							<div class="header-actions-list">
+								<div class="item">
+									<div class="language-select">
+										<div class="select-icon">
+											<i class="icon-world"></i>
+										</div>
+									</div>
+								</div>
+								<div class="item">
+									<a href="#" target="_blank">
+										<i class="icon-instagram"></i>
+									</a>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>

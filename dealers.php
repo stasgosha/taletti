@@ -4,20 +4,10 @@
 	<div class="page-content inner-page">
 		<section class="breadcrumbs-section">
 			<div class="container">
-				<ol class="breadcrumbs" itemscope itemtype="http://schema.org/BreadcrumbList">
-					<li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-						<a itemprop="item" href="index.php">
-							<span itemprop="name">Главная</span>
-						</a>
-						<meta itemprop="position" content="1" />
-					</li>
-					<li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-						<a itemprop="item" href="functional-training.php.php">
-							<span itemprop="name"><?= $page_title ?></span>
-						</a>
-						<meta itemprop="position" content="2" />
-					</li>
-				</ol>
+				<ul class="breadcrumbs">
+					<li><a href="index.php">Главная</a></li>
+					<li><?= $page_title ?></li>
+				</ul>
 			</div>
 		</section>
 
@@ -33,7 +23,7 @@
 					</ul>
 					<div class="tabs-container">
 						<div class="tab" id="moscow">
-							<div class="cards-list columns-3">
+							<div class="cards-list columns-3 lg-columns-2 sm-columns-1">
 								<div class="item">
 									<div class="dealer-card">
 										<div class="card-header">
@@ -108,7 +98,7 @@
 							</div>
 						</div>
 						<div class="tab" id="regions">
-							<div class="cards-list columns-3">
+							<div class="cards-list columns-3 lg-columns-2 sm-columns-1">
 								<div class="item">
 									<div class="dealer-card">
 										<div class="card-header">
@@ -192,7 +182,7 @@
 				<div class="section-caption white">
 					<h3 class="sc-title">Материалы для рекламы</h3>
 				</div>
-				<div class="cards-list columns-4">
+				<div class="cards-list columns-4 md-columns-2 xs-columns-1">
 					<div class="item">
 						<div class="material-card">
 							<div class="card-icon">
@@ -250,12 +240,14 @@
 			</div>
 		</section>
 
-		<section class="want-to-be-a-dealer-section">
+		<section class="text-with-image-section big-paddings">
 			<div class="container">
-				<div class="row">
-					<div class="col-md-7">
-						<div class="tpg">
-							<h3>Хотите стать <br>нашим дилером?</h3>
+				<div class="section-caption no-decoration text-left">
+					<h3 class="sc-title">Хотите стать <br>нашим дилером?</h3>
+				</div>
+				<div class="section-inner image-smaller">
+					<div class="section-content tpg">
+						<div class="section-text">
 							<p>Краткое описание условий партнерства, оцените качество наших материалов в реальных условиях. Так же небольшое описание что будет входить пробный набор для испытания и на каких условиях это поставляется. Какой срок поставки и какая стоимость.</p>
 						</div>
 						<div class="add-request-block">
@@ -273,10 +265,8 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-md-5">
-						<div class="section-image">
-							<img src="img/want-to-be-a-dealer.png" alt="">
-						</div>
+					<div class="section-image">
+						<img src="img/want-to-be-a-dealer.png" alt="">
 					</div>
 				</div>
 			</div>

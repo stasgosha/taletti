@@ -1,0 +1,321 @@
+.logistic-section{
+	padding: 85px 0;
+
+	.section-caption{
+		margin-bottom: -30px;
+	}
+
+	.section-map{
+		position: relative;
+		display: flex;
+		justify-content: center;
+		// padding-top: 260px;
+		flex-direction: column;
+		align-items: center;
+
+		.section-map-inner{
+			// margin-top: -260px;
+			z-index: 15;
+			width: 56.5812%;
+			transform: translateX(7.553%);
+			background: url(../img/russia.png) no-repeat center top;
+			background-size: contain;
+			position: relative;
+
+			&:before{
+				content: '';
+				display: block;
+				padding-top: 61.3293%;
+			}
+
+			.map-marker{
+				// position: static;
+				// position: relative;
+
+				&.moscow{
+					position: absolute;
+					left: -300px;
+					top: 65px;
+
+					@media screen and (max-width: 1199px){
+						left: -260px;
+					}
+				}
+
+				&.russia{
+					position: absolute;
+					left: calc(50% - 7.553%);
+					top: 325px;
+					transform: translateX(-50%);
+				}
+			}
+
+			@media screen and (max-width: 991px){
+				display: flex;
+				justify-content: space-between;
+				width: 80%;
+				padding-top: 60px;
+				margin-left: auto;
+				margin-right: auto;
+				transform: translateX(0);
+
+				.map-marker{
+					position: static !important;
+					width: calc(50% - 15px);
+					transform: translateX(0) !important;
+					box-shadow: $shadow;
+
+					.mm-line{
+						display: none !important;
+					}
+				}
+			}
+
+			@media screen and (max-width: 767px){
+				flex-wrap: wrap;
+
+				.map-marker{
+					width: 100%;
+					max-width: unset;
+					margin-bottom: 30px;
+
+					&:last-child{
+						margin-bottom: 0;
+					}
+				}
+			}
+		}
+	}
+
+	.map-marker{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding: 30px 20px 25px;
+		background: #fff;
+		text-align: center;
+		max-width: 290px;
+
+		.mm-caption{
+			font-size: 24px;
+			line-height: 30px;
+			font-weight: 400;
+			color: #2c2c2c;
+			padding-bottom: 15px;
+			margin-bottom: 15px;
+			position: relative;
+
+			&:before{
+				content: '';
+				display: block;
+				width: 35px;
+				height: 2px;
+				background: #e9e9e9;
+				position: absolute;
+				left: 50%;
+				bottom: 0;
+				transform: translateX(-50%);
+			}
+		}
+
+		.mm-text{
+			margin-bottom: 20px;
+			width: 100%;
+			font-family: $second-font;
+		}
+
+		.mm-price{
+			font-size: 24px;
+			line-height: 30px;
+			font-weight: 400;
+			color: #2c2c2c;
+			margin-bottom: 10px;
+
+			&:last-child{
+				margin-bottom: 0;
+			}
+		}
+
+		.mm-note{
+			font-size: 12px;
+			line-height: 1.5;
+			color: #b1b1b1;
+			font-family: $second-font;
+			letter-spacing: -0.02em;
+		}
+
+		.mm-line{
+			position: absolute;
+			z-index: 5;
+
+			.circle{
+				width: 32px;
+				height: 32px;
+				position: absolute;
+				right: 0;
+				top: 50%;
+				transform: translate(50%, -50%);
+				z-index: -1;
+
+				&:before,
+				&:after{
+					content: '';
+					display: block;
+					position: absolute;
+					left: 50%;
+					top: 50%;
+					transform: translate(-50%, -50%);
+					border-radius: 50%;
+				}
+
+				&:before{
+					background: #fff;
+					width: 32px;
+					height: 32px;
+				}
+
+				&:after{
+					width: 18px;
+					height: 18px;
+					background: linear-gradient(to bottom, #f99048, #ee7624);
+					box-shadow: 0 17px 24px rgba($primary, .2);
+				}
+			}
+		}
+
+		&:before,
+		&:after{
+			content: '';
+			display: block;
+			position: absolute;
+			box-sizing: border-box;
+		}
+
+		&.moscow{
+			&:before{
+				width: 70px;
+				height: 70px;
+				border-left: 2px solid $primary;
+				border-top: 2px solid $primary;
+				left: 0;
+				top: 0;
+			}
+
+			&:after{
+				width: 100%;
+				height: 205px;
+				border-bottom: 2px solid $primary;
+				border-right: 2px solid $primary;
+				right: 0;
+				bottom: 0;
+			}
+
+			.mm-line{
+				position: absolute;
+				left: calc(100% - 2px);
+				bottom: 203px;
+				width: 100px;
+				height: 2px;
+				background: $primary;
+
+				@media screen and (max-width: 1199px){
+					width: 50px;
+				}
+			}
+		}
+
+		&.russia{
+			&:before{
+				width: 50%;
+				height: 120px;
+				border-left: 2px solid $primary;
+				border-top: 2px solid $primary;
+				left: 0;
+				top: 0;
+			}
+
+			&:after{
+				width: 50%;
+				height: 105px;
+				border-bottom: 2px solid $primary;
+				border-right: 2px solid $primary;
+				right: 0;
+				bottom: 0;
+			}
+
+			.mm-line{
+				position: absolute;
+				left: calc(50% - 1px);
+				bottom: calc(100% - 2px);
+				width: 2px;
+				height: 55px;
+				background: $primary;
+
+				.circle{
+					right: 50%;
+					top: 0;
+				}
+			}
+		}
+	}
+
+	.section-images{
+		width: 100%;
+		display: flex;
+		align-items: flex-end;
+		justify-content: space-between;
+		margin-top: -160px;
+		z-index: 10;
+		position: relative;
+
+		img{
+			display: block;
+			max-width: 100%;
+			height: auto;
+		}
+
+		.section-cars{
+			margin-right: -40px;
+			padding-bottom: 50px;
+		}
+	}
+
+	.section-features{
+		margin-top: 60px;
+	}
+}
+
+.logistic-feature-card{
+	padding-bottom: 10px;
+
+	.card-header{
+		display: flex;
+		align-items: center;
+		margin-bottom: 20px;
+
+		.card-icon{
+			flex: none;
+			width: 65px;
+			margin-right: 15px;
+
+			img{
+				display: block;
+				max-width: 100%;
+				height: auto;
+			}
+		}
+
+		.card-caption{
+			font-size: 20px;
+			line-height: 1.6;
+			font-weight: 400;
+			color: $text-dark;
+
+			@media screen and (max-width: 1199px){
+				br{
+					display: none;
+				}
+			}
+		}
+	}
+}

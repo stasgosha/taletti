@@ -4,43 +4,29 @@
 	<div class="page-content inner-page">
 		<section class="breadcrumbs-section">
 			<div class="container">
-				<ol class="breadcrumbs" itemscope itemtype="http://schema.org/BreadcrumbList">
-					<li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-						<a itemprop="item" href="index.php">
-							<span itemprop="name">Главная</span>
-						</a>
-						<meta itemprop="position" content="1" />
-					</li>
-					<li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-						<a itemprop="item" href="functional-training.php.php">
-							<span itemprop="name"><?= $page_title ?></span>
-						</a>
-						<meta itemprop="position" content="2" />
-					</li>
-				</ol>
+				<ul class="breadcrumbs">
+					<li><a href="index.php">Главная</a></li>
+					<li><?= $page_title ?></li>
+				</ul>
 			</div>
 		</section>
 
-		<section class="factory-about-section">
+		<section class="factory-about-section text-with-image-section">
 			<div class="container">
 				<div class="section-caption no-decoration">
 					<h1 class="sc-title"><?= $page_title ?></h1>
 				</div>
-				<div class="row">
-					<div class="col-md-6">
-						<div class="section-image">
-							<p class="tpg-body-1">Современное оборудование <br>и квалифицированный персонал</p>
-							<img src="img/section-images/about-factory-image.png" alt="">
-						</div>
+				<div class="section-inner">
+					<div class="section-image">
+						<p class="tpg-body-1">Современное оборудование <br>и квалифицированный персонал</p>
+						<img src="img/section-images/about-factory-image.png" alt="">
 					</div>
-					<div class="col-md-6">
-						<div class="tpg">
-							<p>Наша натуральная жиронепроницаемая бумага обеспечивает идеальный материал для упаковки кондитерских изделий и выпечки. Если вы создаете стильные капсулы для эксклюзивных тарталеток или упаковка для замороженных блюд, натуральные материалы нашей компании обеспечат необходимую гибкость и качество.</p>
-							<p>В рамках классической общей теории относительности сингулярности обязательно возникают при формировании чёрных дыр под горизонтом событий, в таком случае они ненаблюдаемы извне. В некоторых случаях сингулярности могут быть видны внешнему наблюдателю — так называемые голые сингулярности, например космологическая сингулярность в теории Большого взрыва. С математической точки зрения гравитационная сингулярность является множеством особых точек решения уравнений</p>
-						</div>
+					<div class="section-content tpg">
+						<p>Наша натуральная жиронепроницаемая бумага обеспечивает идеальный материал для упаковки кондитерских изделий и выпечки. Если вы создаете стильные капсулы для эксклюзивных тарталеток или упаковка для замороженных блюд, натуральные материалы нашей компании обеспечат необходимую гибкость и качество.</p>
+						<p>В рамках классической общей теории относительности сингулярности обязательно возникают при формировании чёрных дыр под горизонтом событий, в таком случае они ненаблюдаемы извне. В некоторых случаях сингулярности могут быть видны внешнему наблюдателю — так называемые голые сингулярности, например космологическая сингулярность в теории Большого взрыва. С математической точки зрения гравитационная сингулярность является множеством особых точек решения уравнений</p>
 					</div>
 				</div>
-				<div class="stats-list">
+				<div class="stats-list d-none d-sm-flex">
 					<div class="item">
 						<div class="item-value" data-value="437">437</div>
 						<div class="item-text">единиц упаковки <br>в секунду</div>
@@ -65,22 +51,20 @@
 			</div>
 		</section>
 
-		<section class="factory-facilities-section">
+		<section class="text-with-image-section">
 			<div class="container">
-				<div class="row">
-					<div class="col-md-6">
-						<div class="section-caption no-decoration text-left">
-							<h3 class="sc-title">Возможности производственной линии</h3>
-						</div>
-						<div class="tpg">
+				<div class="section-caption no-decoration text-left">
+					<h3 class="sc-title">Возможности производственной линии</h3>
+				</div>
+				<div class="section-inner">
+					<div class="section-content">
+						<div class="section-text tpg">
 							<p>Продукция компании направлена в первую очередь на кондитерские и хлебопекаренные предприятия, ориентированные как на массовое производство, так и на эксклюзивную продукцию, требующую особого внимания к процессу изготовления, оформления и упаковки.</p>
 							<p>С математической точки зрения гравитационная сингулярность является множеством особых точек решения уравнений Эйнштейна. Однако при этом необходимо строго отличать так называемую «координатную сингулярность» от истинной гравитационной. Координатные сингулярности возникают тогда, когда принятые для решения уравнений.</p>
 						</div>
 					</div>
-					<div class="col-md-6">
-						<div class="section-image">
-							<img src="img/section-images/facilities-image.jpg" alt="">
-						</div>
+					<div class="section-image with-corner with-radius">
+						<img src="img/section-images/facilities-image.jpg" alt="">
 					</div>
 				</div>
 			</div>
@@ -93,16 +77,24 @@
 				</div>
 				<div class="photos-slider slider-default-paddings">
 					<div class="slide">
-						<img src="img/tmp/photo-1.png" alt="">
+						<a href="img/tmp/photo-1.png" class="fancybox" rel="photos">
+							<img src="img/tmp/photo-1.png" alt="">
+						</a>
 					</div>
 					<div class="slide">
-						<img src="img/tmp/photo-2.png" alt="">
+						<a href="img/tmp/photo-2.png" class="fancybox" rel="photos">
+							<img src="img/tmp/photo-2.png" alt="">
+						</a>
 					</div>
 					<div class="slide">
-						<img src="img/tmp/photo-3.png" alt="">
+						<a href="img/tmp/photo-3.png" class="fancybox" rel="photos">
+							<img src="img/tmp/photo-3.png" alt="">
+						</a>
 					</div>
 					<div class="slide">
-						<img src="img/tmp/photo-2.png" alt="">
+						<a href="img/tmp/photo-2.png" class="fancybox" rel="photos">
+							<img src="img/tmp/photo-2.png" alt="">
+						</a>
 					</div>
 				</div>
 			</div>

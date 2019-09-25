@@ -5,6 +5,10 @@
 	position: relative;
 	z-index: 10;
 
+	@media screen and (max-width: 991px){
+		background-attachment: scroll;
+	}
+
 	.footer-row{
 		width: calc(100% + 30px);
 		margin-left: -15px;
@@ -53,6 +57,22 @@
 				width: 50%;
 			}
 		}
+
+		@media screen and (max-width: 767px){
+			flex-wrap: wrap;
+
+			&.first{
+				padding: 40px 0;
+			}
+
+			.footer-block{
+				width: 100%;
+
+				&.wide{
+					width: 100%;
+				}
+			}
+		}
 	}
 }
 
@@ -69,6 +89,10 @@
 
 	&:hover{
 		color: $primary;
+	}
+
+	@media screen and (max-width: 991px){
+		font-size: 15px;
 	}
 }
 
@@ -167,4 +191,24 @@
 	font-size: 14px;
 	line-height: 20px;
 	opacity: .7;
+}
+
+.footer-logo,
+.webolution{
+	img{
+		display: block;
+		max-width: 100%;
+		height: auto;
+	}
+}
+
+@media screen and (max-width: 767px){
+	.footer-logo{
+		margin-bottom: 20px;
+		display: block;
+	}
+
+	.copyright{
+		margin-top: 20px;
+	}
 }
