@@ -39,16 +39,17 @@
 		}
 
 		@media screen and (max-width: 991px){
-			flex-direction: column;
+			flex-direction: column-reverse;
 
 			.section-text-slider{
 				width: 100%;
 				padding-right: 0;
-				padding-bottom: 120px;
+				padding-top: 30px;
 			}
 
 			.section-images-slider{
 				width: 100%;
+				padding-top: 80px;
 
 				.slider-pagination{
 					left: calc(50% + 15px);

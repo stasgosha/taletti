@@ -101,33 +101,6 @@
 				<div class="container">
 					<div class="header-row first">
 						<div class="header-block">
-							<div class="menu-opener">
-								<div class="bars">
-									<div class="bar"></div>
-									<div class="bar"></div>
-									<div class="bar"></div>
-								</div>
-								<span>Меню</span>
-							</div>
-						</div>
-						<div class="header-block">
-							<div class="header-actions-list">
-								<div class="item">
-									<a href="tel:84957097810" class="phone-link">
-										<i class="icon-phone"></i>
-										<span>8 (495) 709-78-10</span>
-									</a>
-								</div>
-								<div class="item">
-									<div class="search-trigger">
-										<i class="icon-search"></i>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="header-row second">
-						<div class="header-block">
 							<a href="index.php" class="logo-block">
 								<img src="img/logo.png" alt="" class="hide-on-sticky">
 								<img src="img/logo-dark.png" alt="" class="on-sticky">
@@ -150,6 +123,33 @@
 									<a href="#" target="_blank">
 										<i class="icon-instagram"></i>
 									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="header-row second">
+						<div class="header-block">
+							<div class="menu-opener">
+								<div class="bars">
+									<div class="bar"></div>
+									<div class="bar"></div>
+									<div class="bar"></div>
+								</div>
+								<span>Меню</span>
+							</div>
+						</div>
+						<div class="header-block">
+							<div class="header-actions-list">
+								<div class="item">
+									<a href="tel:84957097810" class="phone-link">
+										<i class="icon-phone"></i>
+										<span>8 (495) 709-78-10</span>
+									</a>
+								</div>
+								<div class="item">
+									<div class="search-trigger">
+										<i class="icon-search"></i>
+									</div>
 								</div>
 							</div>
 						</div>

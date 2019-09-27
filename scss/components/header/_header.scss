@@ -143,6 +143,16 @@
 		.hide-on-sticky{
 			display: none;
 		}
+
+		.header-row{
+			&.first{
+				padding: 6px 0;
+			}
+
+			&.second{
+				padding: 8px 0;
+			}
+		}
 	}
 
 	&.white{

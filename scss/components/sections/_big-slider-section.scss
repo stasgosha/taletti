@@ -125,5 +125,20 @@
 				right: 20px;
 			}
 		}
+
+		@media screen and (max-width: 767px){
+			bottom: auto;
+			top: 125px;
+
+			&.slick-prev{
+				left: 20px;
+				right: auto;
+			}
+
+			&.slick-next{
+				left: 63px;
+				right: auto;
+			}
+		}
 	}
 }
