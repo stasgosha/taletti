@@ -50,7 +50,7 @@
 				</div>
 		</section>
 
-		<section class="text-with-image-section">
+		<section class="text-with-image-section no-top-padding no-bottom-padding">
 			<div class="container">
 				<div class="section-caption no-decoration text-left">
 					<h3 class="sc-title">Мы заботимся о еде, <br>которую вы едите</h3>
@@ -67,7 +67,7 @@
 			</div>
 		</section>
 
-		<section class="certs-section big-bottom-padding">
+		<section class="certs-section big-bottom-padding on-about-page">
 			<div class="container">
 				<div class="section-inner">
 					<div class="section-slider">

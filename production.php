@@ -46,7 +46,7 @@
 			</div>
 		</section>
 
-		<section class="text-with-image-section big-top-padding">
+		<section class="text-with-image-section big-top-padding sm-small-top-padding">
 			<div class="container">
 				<div class="section-inner image-smaller">
 					<div class="section-image">
@@ -55,7 +55,7 @@
 					<div class="section-content tpg">
 						<h3 style="letter-spacing: 0; font-size: 35px;">Производство бумажных тарталеток</h3>
 						<p>Наша компания является частью торгово-производственного альянса на территории России, в который входят компании TALETTI , BENDERSITALIA SRL , BENDERS RUSSIA , объединяющего поставки сырья из жиростойких материалов на основе бумаги и картона от мировых лидеров отрасли: NORDIC PAPER и METSA TISSUE. Продукция компании направлена в первую очередь на кондитерские и хлебопекаренные предприятия, ориентированные как на массовое производство, так и на эксклюзивную продукцию, требующую особого внимания к процессу изготовления</p>
-						<div class="cards-list xs-columns-1">
+						<div class="cards-list xs-small-paddings xs-columns-1">
 							<div class="item">
 								<a href="#" class="btn btn-light xs-fullwidth">Скачать прайс</a>
 							</div>

@@ -13,6 +13,20 @@
 		padding: 85px 0;
 	}
 
+	&.no-top-padding{
+		padding-top: 0;
+	}
+
+	&.no-bottom-padding{
+		padding-bottom: 0;
+	}
+
+	@media screen and (max-width: 767px){
+		&.sm-small-top-padding{
+			padding-top: 40px;
+		}
+	}
+
 	.section-inner{
 		display: flex;
 		align-items: center;
