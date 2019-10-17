@@ -15,6 +15,14 @@ $(document).ready(function(){
 		e.stopPropagation();
 	})
 
+	// Product Images
+	$('[data-big-image]').click(function(){
+		$('.big-image img').attr('src', $(this).data('big-image'));
+		$(this).addClass('selected').siblings().removeClass('selected');
+	});
+
+	$('[data-big-image]:first-child').click();
+
 	// Sliders
 	function equalSlideHeight(slider){
 		$(slider).on('setPosition', function () {

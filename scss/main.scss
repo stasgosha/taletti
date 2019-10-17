@@ -45,6 +45,9 @@
 @import "components/sections/page-404-section";
 @import "components/sections/assortment-section";
 @import "components/sections/other-products-section";
+@import "components/sections/big-product-card-section";
+@import "components/sections/product-params-section";
+@import "components/sections/product-photos-section";
 
 // Footer
 @import "components/footer/footer";
@@ -64,3 +67,5 @@
 @import "components/common/product-card";
 @import "components/common/advantage-block";
 @import "components/common/menu-opener";
+@import "components/common/product-images-component";
+@import "components/common/table";
